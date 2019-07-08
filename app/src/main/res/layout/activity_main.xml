@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/greenontrack"
+        android:id="@+id/toolbar"
+        >
+    <ImageView
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="right"
+        android:layout_width="112dp"
+        android:layout_height="?actionBarSize"
+        android:scaleType="fitXY"
+        android:src="@drawable/ontracklogo"
+
+        />
+    </android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/maintablelayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/snakesladdersmin">
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntyfv"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntyfv"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntysx"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntysx"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/prize"/>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntysvn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntysvn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntyeght"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntyeght"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntynin"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntynin"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/thirty"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointthirty"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntyfor"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntyfor"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntythre"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntythre"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntytwo"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntytwo"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twntyon"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwntyon"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twnty"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwnty"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/nintn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointnintn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/thrtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointthrtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/frtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointfrtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/fftn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointfftn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/sxtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointsxtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/prize"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/svntn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointsvntn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/eghtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointeghtn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/twelve"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwelve"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/prize" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/elvn"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointelvn"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/ten"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointten"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/nine"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointnine"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/eight"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointeight"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/seven"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointseven"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/one"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:id="@+id/pointone"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointtwo"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/three"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="3"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointthree"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/four"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="4"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointfour"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="Hi"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/five"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="5"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointfive"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginTop="1dp"
+                        android:layout_width="25dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/prize"/>
+
+                    <TextView
+                        android:id="@+id/six"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/pointsix"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:text="L"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/maintablelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Press for Dice Roll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice3droll" />
+</RelativeLayout>
