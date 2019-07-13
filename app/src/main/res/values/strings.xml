@@ -1,3 +1,24 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Telkom</string>
+    <string-array name="age_group" tools:ignore="ExtraTranslation">
+    <item>Select age group</item>
+    <item>18-25</item>
+    <item>26-35</item>
+    <item>36-45</item>
+    <item>46-65</item>
+    <item>65+</item>
+</string-array>
+    <string-array name="spinner_provinces">
+        <item>Select a Province</item>
+        <item>Eastern Cape</item>
+        <item>Free State</item>
+        <item>Gauteng</item>
+        <item>Limpopo</item>
+        <item>Mpumalanga</item>
+        <item>KwaZulu-Natal</item>
+        <item>North West</item>
+        <item>Northern Cape</item>
+        <item>Western Cape</item>
+    </string-array>
+    <string name="places_api_key">AIzaSyDIoOsso3TznDa8czihX7OeZq65NXOjVW4</string>
 </resources>

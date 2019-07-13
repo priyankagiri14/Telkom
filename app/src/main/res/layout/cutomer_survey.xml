@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/greenontrack"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:id="@+id/linearTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_hourly_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="44dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginEnd="8dp"
+                    android:text="Customer Info"
+                    android:textSize="@dimen/_20sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/rl1"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- how much spend on network-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvsetrk"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textColorHint="@color/colorPrimaryDark">
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="How much do you spend on airtime per month?"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <RadioGroup
+                    style="@style/MyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroupAirtime"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upto R50"/>
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R51-R100" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_101"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R101-R150" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_151"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R151-R200" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R200+" />
+                </RadioGroup>
+
+                <!-- how much spend on data-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvsetak"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textColorHint="@color/colorPrimaryDark">
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="How much do you spend on data per month?"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <RadioGroup
+                    style="@style/MyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroupData"
+                    android:layout_gravity="center_horizontal">
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_50d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upto R50" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_51d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R51-R100" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_101d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R101-R150" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_151d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R151-R200" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_200d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R200+" />
+                </RadioGroup>
+
+
+                <!-- What fo you use data for-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvtak"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textColorHint="@color/colorPrimaryDark">
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="What do you use most frequently use data for?"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <RadioGroup
+                    style="@style/MyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroupuseDatafor"
+                    android:layout_gravity="center_horizontal">
+
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_whtsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Whatsapp" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_insta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Instagram" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_internet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Internet" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Education" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_music"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Music" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Videos" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_sport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sport" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_banking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Banking" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="News" />
+                    <RadioButton
+                        android:buttonTint="@color/greenontrack"
+                        android:textColor="@color/black"
+                        android:id="@+id/rb_jobsearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Job Search" />
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvproductpurchase"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textColorHint="@color/colorPrimaryDark">
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Which product did you purcahse today?"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                style="@style/MyRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupproductpurchase"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/greenontrack"
+                    android:textColor="@color/black"
+                    android:id="@+id/rb_simsonke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sim Sonke" />
+                <RadioButton
+                    android:buttonTint="@color/greenontrack"
+                    android:textColor="@color/black"
+                    android:id="@+id/rb_monice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mo Nice" />
+                <RadioButton
+                    android:buttonTint="@color/greenontrack"
+                    android:textColor="@color/black"
+                    android:id="@+id/rb_freeme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Free me" />
+                <RadioButton
+                    android:buttonTint="@color/greenontrack"
+                    android:textColor="@color/black"
+                    android:id="@+id/rb_zkhipha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zkhipha" />
+
+            </RadioGroup>
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/greenontrack"
+                    android:text="Which freeme bundle consists of 150mb data, 50 sms's and 150 on network minutes?"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:backgroundTint="@color/greenontrack"
+                    android:id="@+id/freemebundle"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your answer here"
+                    android:textColorHint="@color/dot"/>
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/greenontrack"
+                    android:text="What USSD string do you dial to activate a freeme bundle?"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:backgroundTint="@color/greenontrack"
+                    android:id="@+id/ussdcode"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your answer here"
+                    android:textColorHint="@color/dot"/>
+
+                <Button
+                    android:id="@+id/survey_done"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bt_bg"
+                    android:text="SAVE"
+                    android:textColor="@color/greenontrack"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

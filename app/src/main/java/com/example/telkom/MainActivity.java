@@ -6,7 +6,6 @@ import android.media.SoundPool;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 import java.util.Timer;
@@ -192,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
             if(diceroll==1)
             {
             /*textView.setVisibility(View.VISIBLE);
-            textView.setBackground(getDrawable(R.drawable.cerclebackgroundred));*/
+            textView.setBackground(getDrawable(R.drawable.buttonbg));*/
                 for (int i=1;i<textviewlist.length;i++){
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointone).setVisibility(View.VISIBLE);
@@ -206,31 +207,32 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointtwo).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointtwo).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointtwo).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointelvn).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointelvn).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
+                dice=11;
+
             }
+
             else if(diceroll==3){
                 for (int i=0;i<textviewlist.length;i++){
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointthree).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointthree).setBackground(getDrawable(R.drawable.mobslg));
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointthree).setVisibility(View.GONE);
-                        }
-                    }, 1000);
-
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointtwntytwo).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointtwntytwo).setBackground(getDrawable(R.drawable.mobslg));
-                        }
-                    }, 1000);
-
                 }
-                dice=22;
-
 
             }
             else if(diceroll==4)
@@ -239,9 +241,23 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointfour).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointfour).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointfour).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointtwntythre).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointtwntythre).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
-
-
+                dice=23;
             }
 
             else if(diceroll==5)
@@ -250,22 +266,8 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointfive).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointfive).setBackground(getDrawable(R.drawable.mobslg));
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointfive).setVisibility(View.GONE);
-                        }
-                    }, 1000);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointeight).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointeight).setBackground(getDrawable(R.drawable.mobslg));
-                        }
-                    },1000);
-                }
 
-                dice=8;
+                }
             }
 
             else if(diceroll==6)
@@ -298,7 +300,23 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointnine).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointnine).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointnine).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointsxtn).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointsxtn).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
+                dice=16;
             }
 
            else if(diceroll==10)
@@ -316,21 +334,8 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointelvn).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointelvn).setBackground(getDrawable(R.drawable.mobslg));
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointelvn).setVisibility(View.GONE);
-                        }
-                    }, 1000);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointtwntysx).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointtwntysx).setBackground(getDrawable(R.drawable.mobslg));
-                        }
-                    },1000);
                 }
-                dice=26;
+
             }
            else if(diceroll==12)
             {
@@ -338,7 +343,24 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointtwelve).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointtwelve).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointtwelve).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointtwntyfv).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointtwntyfv).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
+                dice=25;
+
             }
            else if(diceroll==13)
             {
@@ -362,7 +384,24 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointfftn).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointfftn).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointfftn).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointfive).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointfive).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
+                dice=5;
+
             }
            else if(diceroll==16)
             {
@@ -372,27 +411,12 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(R.id.pointsxtn).setBackground(getDrawable(R.drawable.mobslg));
                 }
             }
-            else if(diceroll==17)
-            {
-                for (int i=0;i<textviewlist.length;i++){
+            else if(diceroll==17) {
+                for (int i = 0; i < textviewlist.length; i++) {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointsvntn).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointsvntn).setBackground(getDrawable(R.drawable.mobslg));
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointsvntn).setVisibility(View.GONE);
-                        }
-                    }, 1000);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointfour).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointfour).setBackground(getDrawable(R.drawable.mobslg));
-                        }
-                    },1000);
                 }
-                dice=4;
             }
            else if(diceroll==18)
             {
@@ -400,7 +424,23 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointeghtn).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointeghtn).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointeghtn).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointsix).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointsix).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
+                dice=6;
             }
            else if(diceroll==19)
             {
@@ -408,21 +448,9 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointnintn).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointnintn).setBackground(getDrawable(R.drawable.mobslg));
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointnintn).setVisibility(View.GONE);
-                        }
-                    }, 1000);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            findViewById(R.id.pointseven).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointseven).setBackground(getDrawable(R.drawable.mobslg));
-                        }
-                    },1000);
+
                 }
-                dice=7;
+
             }
             else if(diceroll==20)
             {
@@ -439,12 +467,12 @@ public class MainActivity extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            findViewById(R.id.pointtwntynin).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointtwntynin).setBackground(getDrawable(R.drawable.mobslg));
+                            findViewById(R.id.pointseven).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointseven).setBackground(getDrawable(R.drawable.mobslg));
                         }
                     },1000);
                 }
-                dice=29;
+                dice=7;
             }
             else if(diceroll==21)
             {
@@ -461,12 +489,12 @@ public class MainActivity extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            findViewById(R.id.pointnine).setVisibility(View.VISIBLE);
-                            findViewById(R.id.pointnine).setBackground(getDrawable(R.drawable.mobslg));
+                            findViewById(R.id.pointthirty).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointthirty).setBackground(getDrawable(R.drawable.mobslg));
                         }
                     },1000);
                 }
-                dice=9;
+                dice=30;
             }
            else if(diceroll==22)
             {
@@ -482,7 +510,23 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(textviewlist[i]).setVisibility(View.INVISIBLE);
                     findViewById(R.id.pointtwntythre).setVisibility(View.VISIBLE);
                     findViewById(R.id.pointtwntythre).setBackground(getDrawable(R.drawable.mobslg));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointtwntythre).setVisibility(View.GONE);
+                        }
+                    }, 1000);
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.pointfour).setVisibility(View.VISIBLE);
+                            findViewById(R.id.pointfour).setBackground(getDrawable(R.drawable.mobslg));
+                        }
+                    }, 1000);
+
                 }
+                dice=4;
             }
           else  if(diceroll==24)
             {

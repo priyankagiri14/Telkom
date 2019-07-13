@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#125D3E</color>
     <color name="colorAccent">#D81B60</color>
     <color name="green">#43A047</color>
     <color name="red">#EB4141</color>
-    <color name="dot">#41EBB5</color>
+    <color name="dot">#4BB896</color>
     <color name="white">#ffff</color>
     <color name="blue">#0275BB</color>
     <color name="greenontrack">#125D3E</color>
+    <color name="colorPrimaryDaark">#00574B</color>
+    <color name="black">#000</color>
+    <color name="lightgray">#ededed</color>
+    <color name="rand">#C99C34</color>
+    <color name="bggreen">#00bfa5</color>
+    <color name="lightblue">#00bfa5</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="deepurple">#7c4dff</color>
 </resources>

@@ -1,11 +1,40 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!-- For Text Input color. -->
+
+    <style name="HeaderBar">
+        <item name="android:background">#303F9F</item>
+    </style>
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/greenontrack</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
     </style>
 
+    <style name="FloatingLabel" parent="@android:style/TextAppearance" >
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="FloatingLabel2" parent="@android:style/TextAppearance" >
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!-- Theme for toolbar popup menu -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="list_card">
+        <item name="android:paddingLeft">@dimen/list_card_padding_left</item>
+        <item name="android:paddingRight">@dimen/list_card_padding_right</item>
+        <item name="android:paddingBottom">@dimen/list_card_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/list_card_padding_top</item>
+    </style>
+<style name="spinner_style">
+<item name="android:textSize">15sp</item>
+<item name="android:textColor">@color/black</item>
+<item name="android:background">@color/dot</item></style>
 </resources>
