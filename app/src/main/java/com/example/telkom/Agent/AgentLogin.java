@@ -36,15 +36,15 @@ public class AgentLogin extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        if(fname.length()==0||lname.length()==0||pswrd.length()==0){
+        /*if(fname.length()==0||lname.length()==0||pswrd.length()==0){
             Toast.makeText(this,"Please enter the value",Toast.LENGTH_SHORT).show();
         }
         else if(!(fname.getText().toString().equals("pankaj"))||!(lname.getText().toString().equals("batyal"))||!(pswrd.getText().toString().equals("123456"))){
             Toast.makeText(this,"Invalid login",Toast.LENGTH_SHORT).show();
         }
-        else{
+        else{*/
             Intent i=new Intent(this, Maindashboard.class);
             startActivity(i);
-        }
+        //}
     }
 }

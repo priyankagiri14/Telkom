@@ -35,4 +35,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation 'net.alhazmy13.MediaPicker:libary:2.4.4'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
     }

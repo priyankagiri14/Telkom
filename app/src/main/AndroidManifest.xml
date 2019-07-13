@@ -19,10 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Branding.Start_branding_activity"/>
+        <activity android:name=".Branding.Branding_storeslist"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".Customer.CustomerSurvey"/>
         <activity android:name=".Customer.CustomerInfo"/>
         <activity android:name=".Dashboard.Maindashboard"/>
+        <activity android:name=".Branding.Endbranding_store"/>
 
     </application>
 
