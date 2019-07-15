@@ -9,10 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatSpinner;
 
+import com.appizona.yehiahd.fastsave.FastSave;
 import com.example.telkom.Customer.CustomerSurvey;
 import com.example.telkom.R;
 
@@ -22,7 +25,7 @@ import java.util.List;
 
 public class Branding_storeslist extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
-    Spinner spinner;
+    AppCompatSpinner spinner;
     Button next;
     public static String storename;
     int storeid;
@@ -42,7 +45,6 @@ public class Branding_storeslist extends AppCompatActivity implements AdapterVie
         ArrayAdapter<String>dataAdapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,list);
         dataAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(dataAdapter);
-
     }
 
     @Override
@@ -50,6 +52,7 @@ public class Branding_storeslist extends AppCompatActivity implements AdapterVie
         storename=spinner.getSelectedItem().toString();
         storeid=spinner.getSelectedItemPosition();
         Log.d("Storename" ,storename +storeid);
+
     }
 
     @Override
@@ -60,6 +63,7 @@ public class Branding_storeslist extends AppCompatActivity implements AdapterVie
     @Override
     public void onClick(View v) {
         Intent i=new Intent(this, Start_branding_activity.class);
+        i.putExtra("store_name",storename);
         startActivity(i);
 
     }

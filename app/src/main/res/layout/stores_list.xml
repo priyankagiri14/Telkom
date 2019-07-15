@@ -4,14 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
     <Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/greenontrack"
-        tools:ignore="MissingConstraints">
+        android:background="@color/greenontrack">
     </Toolbar>
 
     <!-- TODO: Update blank fragment layout -->
@@ -28,8 +26,7 @@
         android:gravity="center"
         android:textSize="@dimen/_20sdp" />
 
-    <Spinner
-        android:background="@color/greenontrack"
+    <androidx.appcompat.widget.AppCompatSpinner
         style="@android:style/Widget.Holo.Light.Spinner"
         android:layout_below="@id/Storestext"
         android:layout_width="match_parent"
@@ -38,7 +35,7 @@
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:layout_height="wrap_content">
-    </Spinner>
+    </androidx.appcompat.widget.AppCompatSpinner>
 
 
     <Button

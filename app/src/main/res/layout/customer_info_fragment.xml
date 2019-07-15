@@ -93,17 +93,79 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvCustomerEmail"
-                android:visibility="gone"
+                android:visibility="visible"
                 android:textColorHint="@color/colorPrimaryDark">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="Sim serial number"
                     android:id="@+id/editTextCustomerEmail"
                     android:textColor="#000"
-                    android:inputType="textPersonName" />
+                    android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+            <!-- Age Group -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNerk"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textColorHint="@color/colorPrimaryDark">
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Airtime value bought and loaded:"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                style="@style/MyRadioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioroupAgeGroup"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R5" />
+
+                <RadioButton
+                    android:id="@+id/_26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R10" />
+
+                <RadioButton
+                    android:id="@+id/rb_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R20" />
+                <RadioButton
+                    android:id="@+id/rb_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R30" />
+                <RadioButton
+                    android:id="@+id/rb_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R50" />
+                <RadioButton
+                    android:id="@+id/rb_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R60" />
+                <RadioButton
+                    android:id="@+id/rb_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R100" />
+            </RadioGroup>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:visibility="gone"
@@ -233,9 +295,16 @@
                     android:layout_height="wrap_content">
                 </Spinner>
             </LinearLayout>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Suburb:"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
             <EditText
                 android:focusableInTouchMode="false"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_height="wrap_content"
                 android:id="@+id/places_autocomplete_fragment"
                 android:layout_width="match_parent"

@@ -15,6 +15,8 @@
     <color name="lightgray">#ededed</color>
     <color name="rand">#C99C34</color>
     <color name="bggreen">#00bfa5</color>
+    <color name="spinnerTextColor">#ffffff</color>
+
     <color name="lightblue">#00bfa5</color>
     <color name="darkblue">#23283a</color>
     <color name="testcolorblue">#152b38</color>

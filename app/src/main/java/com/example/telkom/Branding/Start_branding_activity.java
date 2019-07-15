@@ -17,7 +17,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.appizona.yehiahd.fastsave.FastSave;
 import com.example.telkom.R;
+import com.location.aravind.getlocation.GeoLocator;
+
 
 import net.alhazmy13.mediapicker.Image.ImagePicker;
 
@@ -51,11 +54,19 @@ public class Start_branding_activity extends AppCompatActivity implements View.O
         initDateTime();
         storename = Branding_storeslist.storename;
         textViewStoreName.setText(storename);
-        //getLocation();
+        getLocation();
 
     }
 
     /*--------- getting location -----------*/
+
+    private void getLocation() {
+        GeoLocator geoLocator = new GeoLocator(getApplicationContext(),this);
+        Log.d("startbranding", "getLocation: "+geoLocator.getLattitude()+"\n"+ geoLocator.getLongitude());
+        editTextLocation.setText(geoLocator.getAddress());
+
+    }
+
 
 
 
@@ -82,7 +93,8 @@ public class Start_branding_activity extends AppCompatActivity implements View.O
 
     private void initViews() {
         textViewStoreName = (TextView) findViewById(R.id.textViewStoreName);
-        //textViewStoreName.setText(); get from spinner id
+        String name=getIntent().getStringExtra("store_name");
+        textViewStoreName.setText(name);
         textViewDate = (TextView) findViewById(R.id.textViewDate);
         textViewTime = (TextView) findViewById(R.id.textViewTime);
         editTextLocation = (EditText) findViewById(R.id.editTextLocation);
@@ -108,6 +120,9 @@ public class Start_branding_activity extends AppCompatActivity implements View.O
             }
             else {
                 Intent i=new Intent(this,Endbranding_store.class);
+                i.putExtra("store_name",storename);
+                FastSave.getInstance().saveString("started","true");
+                FastSave.getInstance().saveString("store",storename);
                 startActivity(i);
             }
         }
@@ -133,11 +148,10 @@ public class Start_branding_activity extends AppCompatActivity implements View.O
 
         if (requestCode == ImagePicker.IMAGE_PICKER_REQUEST_CODE && resultCode == RESULT_OK) {
 
-
-            //for driving license proof
             mPath = data.getStringArrayListExtra(ImagePicker.EXTRA_IMAGE_PATH);
             filePath = mPath.get(0);
             Log.d("startBranding", "onActivityResult: " + filePath);
+            Toast.makeText(this, "image captured", Toast.LENGTH_SHORT).show();
         }
     }
 

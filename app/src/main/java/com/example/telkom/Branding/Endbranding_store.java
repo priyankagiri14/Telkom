@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.appizona.yehiahd.fastsave.FastSave;
 import com.example.telkom.Dashboard.Maindashboard;
 import com.example.telkom.R;
 
@@ -22,14 +23,17 @@ public class Endbranding_store extends AppCompatActivity implements View.OnClick
         textView=findViewById(R.id.brandingstart);
         button=findViewById(R.id.enddaybtn);
         button.setOnClickListener(this);
-        textView.setText("Your branding has started for the " +Branding_storeslist.storename);
+        String name=FastSave.getInstance().getString("store",null);
+        textView.setText("Your branding has started for the " +name);
 
     }
 
     @Override
     public void onClick(View v) {
-        Intent i=new Intent(this, Maindashboard.class);
+        Intent i=new Intent(this, Branding_storeslist.class);
         startActivity(i);
+        FastSave.getInstance().deleteValue("started");
+        FastSave.getInstance().deleteValue("store");
         finish();
     }
 }
